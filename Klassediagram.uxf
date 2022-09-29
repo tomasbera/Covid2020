@@ -1,0 +1,36 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>170</x><y>130</y><w>350</w><h>230</h></coordinates><panel_attributes>style=autoresize
+CovidRegister
+--
++ CovidRegister()
+--
++ ArrayList&lt;Covid&gt; deepCopyMethod(ArrayList&lt;Covid&gt;)
++ Iterator&lt;Covid&gt; iteratorMethod()
++ int numOfDeadspecific(String)
++ int numOfRegisters()
++ ArrayList&lt;Covid&gt; registerNewDateNow(String, int, int)
++ ArrayList&lt;Covid&gt; registerNewOwnDate(String, String, int, int)
++ ArrayList&lt;Covid&gt; searchDate(String)
++ ArrayList&lt;Covid&gt; searchThisDate()
++ ArrayList&lt;Covid&gt; soutAllCovid()
++ String toString()
++ int totalNumDead()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>130</y><w>210</w><h>220</h></coordinates><panel_attributes>style=autoresize
+Covid
+--
+- LocalDate LOCALDATE{readOnly}
+- String COUNTRY{readOnly}
+- int NUMOFSICK {readOnly}
+- int NUMOFDEAD {readOnly}
+--
++ Covid(String, String, int, int)
++ Covid(String, int, int)
+--
++ String getCOUNTRY()
++ String getLOCALDATE()
++ int getNUMOFDEAD()
++ int getNUMOFSICK()
++ String toString()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>210</y><w>280</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-&gt;
+m1=1
+m2=*
+
+
+</panel_attributes><additional_attributes>10;20;260;20</additional_attributes></element></diagram>
